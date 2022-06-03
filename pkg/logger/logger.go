@@ -314,7 +314,7 @@ func (l *Logger) FormatTimestamp(ts time.Time) string {
 		ts = ts.UTC()
 	}
 
-	return ts.Format("2006/01/02 15:04:05")
+	return ts.Format(time.RFC3339)
 }
 
 // Flags returns the output flags for the logger.
